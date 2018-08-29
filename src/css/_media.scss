@@ -1,0 +1,16 @@
+/////////////////////////
+/////MEDIA QUERY MANAGER
+@mixin respond($break-point){
+  @if $break-point == tab-land {
+    @media only screen and (max-width: 78em){@content};
+  }
+  @if $break-point == tab-port {
+    @media only screen and (max-width: 56.25em){@content};
+  }
+  @if $break-point == phone {
+    @media only screen and (max-width: 37.5em){@content};
+  }
+  @if $break-point == iphone {
+    @media only screen and (max-width: 25em){@content};
+  }
+}

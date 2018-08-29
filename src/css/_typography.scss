@@ -1,0 +1,53 @@
+.heading {
+    font-size: 4.5rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: $font-display;
+    @include respond(phone){
+      font-size: 3.5rem;
+    }
+  &__stick {
+    color: $color-white;
+  }
+  &__text {
+    color: $color-tertiary;
+  }
+  &-4 {
+    margin-bottom: .5rem;
+  }
+  &-long {
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    padding: 4rem 14rem;
+    font-family: $font-display;
+    display: grid;
+    color: $color-black-light;
+    grid-template-columns: 1fr max-content max-content max-content 1fr;
+    align-items: center;
+    grid-column-gap: 1rem;
+    @include respond(phone){
+      padding: 2rem 7rem;
+      font-size: 1.3rem;
+    }
+    &:before,
+    &:after {
+      content: '';
+      display: block;
+      height: 2px;
+      background-color: $color-black-dark;
+    }
+    &__number{
+      font-size: 2rem;
+      background-color: $color-tertiary;
+      padding: .5rem 1rem;
+      text-transform: uppercase;
+      display: inline-block;
+      transform: rotate(-6deg);
+      color: $color-white;
+    }
+    &__search{
+      font-weight: bold;
+      color: $color-tertiary;
+    }
+  }
+}

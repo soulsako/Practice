@@ -1,0 +1,27 @@
+.section-categories {
+  padding: 4rem 14rem;
+}
+.categories {
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    grid-gap: 4rem;
+    list-style: none;
+  }
+
+  &__item {
+  background-color: $color-tertiary;
+  border-radius: 3px;
+  text-align: center;
+  }
+  &__link {
+    display: inline-block;
+    padding: 1.5rem 3rem;
+    width: 100%;
+    color: $color-grey-light-1 !important;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 1.5rem;
+  }
+}

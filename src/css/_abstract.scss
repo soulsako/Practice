@@ -1,0 +1,46 @@
+////////////////////////////////////
+//////////----VARIABLES----////////
+//////////////////////////////////
+/*------TEXT COLORS -----*/
+$color-text: #444;
+/*------FONT STYLES -----*/
+$font-primary: 'Nunito', sans-serif;
+$font-display: 'Josefin Sans', sans-serif;
+$font-logo: 'Bitter', sans-serif;
+/*------MAIN COLORS -----*/
+$color-primary:  #d29062; // Whisky color
+$color-secondary: #9f6b46;
+$color-tertiary: #c8102e;
+$color-white: #fff;
+$color-black: #000;
+$color-black-light: #2f2f2f;
+$color-black-dark: #1c1c1f;
+
+$color-grey-light-1: #f9f7f6;
+$color-grey-light-2: #eee;
+
+$color-grey-dark-1: #54483A;
+$color-grey-dark-2: #6D5D4B;
+////////////////////////////////////
+/////----MIXINS----///////
+//////////////////////////////////
+@mixin centerText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+@mixin clearfix {
+  &:after {
+    content: '';
+    clear: both;
+    display: table;
+  }
+}
+
+////////////////////////////////////
+/////----UTILITY CLASSES----///////
+//////////////////////////////////
+.mt-md {
+  margin-top: 3rem;
+}

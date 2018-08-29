@@ -1,0 +1,77 @@
+.btn {
+  text-transform: uppercase;
+  color: $color-white;
+  border-radius: 3px;
+  display: inline-block;
+  cursor: pointer;
+  border: 0;
+  outline: none;
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: 2px;
+
+  &-main {
+    padding: 1.5rem 3rem;
+    background-color: $color-black-light;
+    transition: all .2s;
+    border: 2px solid transparent;
+    &:hover {
+      background-color: $color-grey-light-1;
+      color: $color-black-light;
+      border: 2px solid $color-black-light;
+    }
+  }
+  &-form {
+    padding: 2.5rem 3rem;
+    background-color: $color-black-dark;
+    display: flex;
+    align-items: center;
+    font-size: 1.8rem;
+    border: 2px solid $color-grey-light-1;
+    transition: all .2s;
+    &:hover{
+      background-color: lighten($color-black-dark, 5%);
+    }
+    @include respond(tab-port){
+      padding: 1.7rem 2.5rem;
+      font-size: 1.5rem;
+    }
+    @include respond(phone){
+      padding: 1.4rem 2rem;
+      font-size: 1.2rem;
+    }
+  }
+}
+.btn-red-outline {
+  text-transform: uppercase;
+  background-color: $color-white;
+  color: $color-tertiary;
+  border-radius: 4px;
+  border: 3px solid $color-tertiary;
+  padding: 1rem 3rem;
+  text-align: center;
+  outline: none;
+  cursor: pointer;
+  font-size: 1.8rem;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+  transition: all .2s;
+  white-space: nowrap;
+  line-height: 1.4;
+  display: inline-block;
+  letter-spacing: 1px;
+  margin: 1rem 0;
+  &:hover {
+    color: $color-white;
+    background-color: $color-tertiary;
+  }
+  &__icon {
+    display: inline-block;
+    height: 1.8rem;
+    width: 1.8rem;
+    fill: $color-tertiary;
+    transition: all .2s;
+  }
+  &:hover &__icon {
+    fill: $color-white;
+  }
+}

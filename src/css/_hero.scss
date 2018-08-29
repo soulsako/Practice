@@ -1,0 +1,13 @@
+.hero-box {
+  background-image: linear-gradient(to right bottom, rgba($color-primary, .9), rgba($color-secondary, .9)), url(../img/hero-image.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 55rem;
+  width: 100%;
+  position: relative;
+  &__text {
+    @include centerText;
+    text-align: center;
+    width: 80%;
+  }
+}

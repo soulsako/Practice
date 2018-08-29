@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:100,400,700|Nunito:400,400i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Galada" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+  <title>Perfect Cocktail | Welcome</title>
+</head>
+<body>
+
+  <div id="loader-wrapper">
+    <div id="loader"></div>
+  </div>
+
+  <div class="modal" style="display: none;">
+    <div class="modal__content" style="display: none;">
+
+    <!--<div class="recipe" id="recipe">
+        <div class="recipe__title">
+          <span class="recipe__title-span">white russian</span>
+        </div>
+        <figure class="recipe__fig">
+          <img src="img/cocktail-2.jpg" alt="Cocktail" class="recipe__img">
+        </figure>
+        <div class="recipe__info">
+          <h4 class="recipe__info-heading">Instructions</h4>
+          <p class="recipe__info-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit asperiores ipsum aliquid doloremque minus quia id provident nisi aut ea.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit asperiores ipsum aliquid doloremque minus quia id provident nisi aut ea.</p>
+          <h4 class="recipe__info-heading">Ingredients</h4>
+          <ul class="recipe__info-ingredients">
+            <li class="recipe__info-ingredients-item"><strong>Tequila:&nbsp;</strong>2 tbsp</li>
+            <li class="recipe__info-ingredients-item"><strong>Tequila:&nbsp;</strong>2 tbsp</li>
+            <li class="recipe__info-ingredients-item"><strong>Tequila:&nbsp;</strong>2 tbsp</li>
+            <li class="recipe__info-ingredients-item"><strong>Tequila:&nbsp;</strong>2 tbsp</li>
+            <li class="recipe__info-ingredients-item"><strong>Tequila:&nbsp;</strong>2 tbsp</li>
+            <li class="recipe__info-ingredients-item"><strong>Tequila:&nbsp;</strong>2 tbsp</li>
+          </ul>
+        </div>
+        <div class="recipe__categories">
+          <div class="recipe__categories-category">Category</div>
+          <div class="recipe__categories-text recipe__categories-text-btn">Ordinary Drink</div>
+          <div class="recipe__categories-category">Alcohol/Non-Alcoholic</div>
+          <div class="recipe__categories-text">Alcoholic</div>
+          <div class="recipe__categories-category">Glass</div>
+          <div class="recipe__categories-text">Cocktail</div>
+          <div class="recipe__categories-category">Cocktail Type</div>
+          <div class="recipe__categories-text">Contemporary Classics</div>
+        </div>
+        <svg class="recipe__icon">
+          <use xlink:href="img/sprite.svg#icon-cross"></use>
+        </svg>
+    </div>-->
+  </div>
+</div>
+
+    <nav class="navigation">
+          <a href="index.html" class="navigation__logo">
+            <span class="navigation__logo-top">Absolute</span>
+            <span class="navigation__logo-bottom">Cocktails</span>
+          </a>
+          <ul class="navigation__list">
+            <li class="navigation__item"><a href="ingredient.html" class="navigation__link">Search by Ingredient</a></li>
+            <li class="navigation__item"><a href="#" class="navigation__link">Non-alcohol</a></li>
+            <li class="navigation__item"><a href="#" class="navigation__link">contact us</a></li>
+          </ul>
+          <svg class="navigation__hamburger">
+            <use xlink:href="img/sprite.svg#icon-menu"></use>
+          </svg>
+          <button class="liked__btn" id="likeButton">
+            <svg class="liked__icon">
+              <use xlink:href="img/sprite.svg#icon-heart"></use>
+            </svg>
+          </button>
+    </nav>
+    <div class="liked__modal" id="likeModal">
+      <div class="liked__empty">Liked cocktails will be displayed here.</div>
+      <ul class="liked__list"></ul>
+    </div>
+
+
+    <div class="hero-box" id="heroBox">
+      <div class="hero-box__text">
+        <h1 class="heading">
+          <span class="heading__stick">Search</span>
+          <span class="heading__text" id="typed"></span>
+        </h1>
+        <button class="btn btn-main mt-md">search now</button>
+      </div>
+    </div>
+
+    <form class="form">
+      <div class="form__search">
+        <input type="text" class="form__input" placeholder="Cocktail name..." id="searchInput">
+        <input type="hidden" id="type" value="name">
+
+        <button class="btn btn-form">
+          <svg class="form__icon">
+            <use xlink:href="img/sprite.svg#icon-search"></use>
+          </svg>
+          <span class="form__span">Search</span>
+        </button>
+      </div>
+    </form>
+    <main class="main">
+
+    <div class="search" style="display: none;">
+      <div class="heading-long" id="searchResultsHeading"></div>
+      <section class="section-search">
+        <ul class="searchList">
+
+        </ul>
+      </section>
+    </div>
+
+
+    <div class="heading-long">Most popular recipes</div>
+
+    <section class="section-cocktails">
+      <ul class="cocktails-list">
+
+        <!--<li>
+          <figure class="cocktails">
+          <svg class="cocktails__icon">
+            <use xlink:href="img/sprite.svg#icon-heart"></use>
+          </svg>
+          <img src="img/cocktail-1.jpg" alt="Cocktail 1" class="cocktails__img">
+          <div class="cocktails__title">
+            Aviation Recipe
+          </div>
+          </figure>
+        </li>-->
+
+      </ul>
+
+    </section>
+    </main>
+</body>
+</html>
